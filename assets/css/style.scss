@@ -125,6 +125,45 @@ body {
 }
 .nav-bar {
   position: absolute;
+  z-index: 2;
+  top: 0;
+  left: 0;
+  width: 100%;
+  padding-left: 25px;
+  padding-top: 32px;
+  padding-right: 25px;
+  .nav-list {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    .links-nav {
+      ul {
+        display: flex;
+        align-items: center;
+        li {
+          width: 136px;
+          padding: 20px;
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          transition: $transition;
+          a {
+            font-family: $lato;
+            font-size: 18px;
+            font-weight: 400;
+            line-height: 50px;
+            text-align: center;
+            color: $white;
+          }
+          &:hover {
+            background: #dcfffe4d;
+            border-radius: 15px;
+            transition: $transition;
+          }
+        }
+      }
+    }
+  }
 }
 .main-banner {
   overflow: hidden;

@@ -110,6 +110,43 @@ body {
 
 .nav-bar {
   position: absolute;
+  z-index: 2;
+  top: 0;
+  left: 0;
+  width: 100%;
+  padding-left: 25px;
+  padding-top: 32px;
+  padding-right: 25px;
+}
+.nav-bar .nav-list {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.nav-bar .nav-list .links-nav ul {
+  display: flex;
+  align-items: center;
+}
+.nav-bar .nav-list .links-nav ul li {
+  width: 136px;
+  padding: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: all 0.5s ease-in-out;
+}
+.nav-bar .nav-list .links-nav ul li a {
+  font-family: "Lato", sans-serif;
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 50px;
+  text-align: center;
+  color: #ffffff;
+}
+.nav-bar .nav-list .links-nav ul li:hover {
+  background: rgba(220, 255, 254, 0.3019607843);
+  border-radius: 15px;
+  transition: all 0.5s ease-in-out;
 }
 
 .main-banner {
